@@ -24,10 +24,12 @@ public class Serie {
 
     }
     
+
+    //******************* 
     public double CalcularFor(){
         double r =0.0;
         double constante = 1.0;
-        for (int i = 0; i < this.n; i++) {
+        for (int i = 1; i < this.n; i++) {
             r+= constante/i;
         }
          return r;
@@ -43,6 +45,18 @@ public class Serie {
           i++;
        }
        return r;
+    }
+      
+    public double CalcularDoWhile(){
+        int i = 1;
+        double r = 0.0;
+        double constante = 1.0;
+        do{
+          r+=constante/i;
+          i++;
+        }while(i < this.n);
+        
+        return r;
     }
 
     @Override
