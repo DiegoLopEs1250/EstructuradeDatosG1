@@ -5,7 +5,7 @@ public class Operaciones {
     private int tam;
 
     public Operaciones(int tama){
-        this.setTam(tam);
+        this.setTam(tama);
         arr = new int[this.tam];
     }
 
@@ -37,5 +37,23 @@ public class Operaciones {
             System.out.println(arr[0]);
             i++;
         }
+    }
+
+    public int sumar() {
+        int acumulador = 0;
+        for (int i = 0; i < arr.length; i++) {
+            acumulador=acumulador+arr[i];
+        }
+        return  acumulador;
+    }
+
+    public int sumarPar() {
+        int acumulador = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]%2==0){
+                acumulador=acumulador+arr[i];
+            }
+        }
+        return  acumulador;
     }
 }

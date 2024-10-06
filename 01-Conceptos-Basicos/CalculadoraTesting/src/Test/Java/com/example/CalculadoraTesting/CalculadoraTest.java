@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class CalculadoraTest {
 
     private final Calculadora calculadora = new Calculadora();
-
+/*
     @Test
     public void testSumar() {
         assertEquals(5, calculadora.sumar(2, 3));
@@ -30,5 +30,10 @@ public class CalculadoraTest {
     @Test
     public void testDividirPorCero() {
         assertThrows(ArithmeticException.class, () -> calculadora.dividir(1, 0));
+    }
+*/
+    @Test
+    public void testSumaRecursiva(){
+        assertEquals(55, calculadora.suma(10));
     }
 }

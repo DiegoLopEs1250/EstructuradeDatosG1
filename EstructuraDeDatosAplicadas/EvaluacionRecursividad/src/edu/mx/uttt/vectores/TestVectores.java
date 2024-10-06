@@ -26,8 +26,16 @@ public class TestVectores {
 //        System.out.println(imprimir1(edades));
 //        llenarEstatura(estaturas);
 //        System.out.println(imprimir2(estaturas));
+        int tam = Integer.parseInt(JOptionPane.showInputDialog("Introduce el tamaño del vector"));
+       Operaciones ope = new Operaciones(tam);
 
-       Operaciones ope = new Operaciones(3);
+       llenarArreglo(ope.getArr());
+       ope.imprimir();
+
+       int res = ope.sumar();
+        System.out.println("La suma de los valores es: " + res);
+        int par = ope.sumarPar();
+        System.out.println("Los numeros primos son: "+ par);
     }
 
     public static void llenarArreglo(int [] arr){

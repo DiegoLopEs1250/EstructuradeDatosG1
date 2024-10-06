@@ -3,46 +3,19 @@
 fun main() {
 
     //Primer video
-    /*val nombre = "Hello World"
+    var edad2 = "45"
+    print("Transformando dato: ${edad2.toDouble()}")
+    val nombre = "Hello World"
     val apellido = "with kotlin"
-    val edad = 42
+    var edad : Int? = null
+    edad = 12
+    edad?.let {
+        print("Este valor no viene vacio")
+    }
+    edad = 14
     val resultado= nombre.plus(apellido).plus(" ").plus(edad)
-    println("Iniciando con kotlin: $resultado")*/
+    println("Iniciando con kotlin: $resultado")
 
     var Variable : String = "Mi primer variable en string"
-
-    /*println("1")
-    println("2")
-    println("3")*/
-
-    println("I'm")
-    println("learning")
-    println("kotlin")
-
-    println("Monday")
-    println("Tuesday")
-    println("Thursday")
-    println("Wednesday")
-    println("Friday")
-
-
-    val count: Int = 2
-    println(count)
-
-    val unreadCount = 5
-    val readCount = 100
-    println("You have ${unreadCount + readCount} total messages in your inbox.")
-
-    val numberOfPhotos = 100
-    val photosDeleted = 10
-    println("$numberOfPhotos photos")
-    println("$photosDeleted photos deleted")
-    println("${numberOfPhotos - photosDeleted} photos left")
-
-    var cartTotal = 0
-    println("Total: $cartTotal")
-
-    cartTotal = 20
-    println("Total: $cartTotal")
 
 }
